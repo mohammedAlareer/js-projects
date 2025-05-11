@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background-color: slateblue;
+    font-family: cursive;
+    color: white;
+}
+
+h2{
+    text-align: center;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.year{
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.container{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.container div{
+    margin: 0px 15px;
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-top: -35px;
+    position: relative;
+    text-align: center;
+    width: 100px;
+}
+
+.container div::before{
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    font-size: 0.35em;
+    left: 0;
+    line-height: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    width: 100%;
+    
+
+}
+.container #day::before{
+    content: "Days";
+}
+.container #hour::before{
+    content: "Hours";
+}
+.container #minute::before{
+    content: "Minutes";
+}
+.container #second::before{
+    content: "Seconds";
+}
+
+
